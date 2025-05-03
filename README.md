@@ -16,6 +16,7 @@ Hi guys! This repository contains the culmination of my work in PHY 371C. I aim 
 
 ### Analysis Notebooks  
 - Jupyter notebooks with in‑depth analysis, in‑line commentary, and accompanying Markdown snippets  
+- **NOTE** In my notebooks, I often output ROOT Canvases which shows an interactive histogram. This is not compatible with GitHub, so it is not visible through web, so there are long gaps in the notebooks. 
 
 ### PHY 371C Presentation  
 - LaTeX source files and compiled PDF slides providing a clear, high‑level overview of the project  
