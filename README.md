@@ -20,7 +20,7 @@ Hi guys! This repository contains the culmination of my work in PHY 371C. I aim 
 ### EventGen  
 - **`pygen.ipynb`**: python event generator with customizable settings. Saved as ROOT Tree files for downstream analysis. Also contains a loop which generates events at various `pTHatMin` values
 - **`EventGenHepAndRoot.cpp`**: produces the same ROOT Tree output, but additionally a hepMC3 ASCII output file using C++.  
-- **`EventGenHepAndRoot.`**: the compiled executable file for the C++ macro. *Ignore this*
+- **`EventGenHepAndRoot`**: the compiled executable file for the C++ macro. *Ignore this*
 
 ### Analysis Notebooks  
 - Jupyter notebooks with in‑depth analysis, in‑line commentary, and accompanying Markdown snippets  
