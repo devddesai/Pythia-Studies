@@ -7,16 +7,27 @@
 Hi guys! This repository contains the culmination of my work in PHY 371C. I aim to present a tutorial on how to conduct Pythia studies and get through the most difficult part -- the setup. 
 
 
+## Overview of what I will be discussing here:
+- Repository Table of Contents
+- Package dependencies  
+- Pythia Setup  
+- Analysis  
+
+---
 
 ## Table of Contents
 
 ### EventGen  
-- **Python script**: generate customizable events, saved as ROOT Tree files for downstream analysis  
-- **C++ script**: produce identical ROOT Tree output (plus optional hepMC3 ASCII format)  
+- **`pygen.ipynb`**: python event generator with customizable settings. Saved as ROOT Tree files for downstream analysis. Also contains a loop which generates events at various `pTHatMin` values
+- **`EventGenHepAndRoot.cpp`**: produces the same ROOT Tree output, but additionally a hepMC3 ASCII output file using C++.   
 
 ### Analysis Notebooks  
 - Jupyter notebooks with in‑depth analysis, in‑line commentary, and accompanying Markdown snippets  
 - **NOTE** In my notebooks, I often output ROOT Canvases which shows an interactive histogram. This is not compatible with GitHub, so it is not visible through web, so there are long gaps in the notebooks. 
+- **`DataStructureCheck.ipynb`**: cross verification between hepMC output and ROOT output file to ensure our custom ROOT file is storing the correct data. Filters out gluons and quarks to ensure accuracy.
+- **`ptHardAnalysis.ipynb`**: how pTHatMin affects charm quark production
+- **`charmMultiplicityAnalysis.ipynb`**: charm production multiplicity analysis, and using particle filtering to get realistic data. Some rudimentary kinematic analysis is at the end as well.
+- **`charmKinematicAnalysis.ipynb`**: kinematic correlations of charmed hadrons, including 1D and 2D histogram analysis. 
 
 ### PHY 371C Presentation  
 - LaTeX source files and compiled PDF slides providing a clear, high‑level overview of the project  
@@ -24,13 +35,6 @@ Hi guys! This repository contains the culmination of my work in PHY 371C. I aim 
 ### Ravi Koka Thesis  
 - Concise theoretical background by our friend Ravi Koka  
 - Full thesis repository: https://github.com/ravikoka/broad  
-
----
-
-## Overview of what I will be discussing here:
-- Package dependencies  
-- Pythia Setup  
-- Analysis  
 
 ---
 
@@ -205,6 +209,7 @@ h_pt.Draw()
 This gives you visual access to the kinematic distributions you're studying. ROOT also supports complex plotting, fitting, and overlays—all accessible through its Python interface.
 
 ---
+
 
 Feel free to go through my analysis notebooks, which have some in line and .md commentary to help you follow. A lot of the logic and especially the plotting on histograms can be done well by AI tools such as chatGPT or Claude Sonnet -- feel free to use these to your aid to understand and expedite analysis and plotting.
 
