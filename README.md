@@ -4,7 +4,7 @@
 
 # PHY 371C Pythia Tutorial
 
-Hi guys! This repository contains the culmination of my work in PHY 371C. I aim to present a tutorial on how to conduct Pythia studies and get through the most difficult part -- the setup. 
+Hi guys! This repository contains the culmination of my work in PHY 371C. I aim to present a tutorial on how to set up and conduct Pythia studies.
 
 
 ## Overview of what I will be discussing here:
